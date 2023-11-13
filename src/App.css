@@ -1,0 +1,124 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 86% auto;
+}
+
+h2 {
+  padding-left: 2%;
+}
+
+.box {
+  width: 93%;
+  height: 90%;
+  background-color: #efefef;
+  justify-self: center;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tabs div:first-child{
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.cardConvert {
+  display: grid;
+  align-items: center;
+  height: 60%;
+  grid-template-columns: 48% auto 48%;
+  gap: 0.8rem;
+}
+
+.cardConvert div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  height: 100%;
+  padding: 15px 15px;
+}
+
+.cardConvert p {
+  justify-self: center;
+}
+
+.cardConvert div button {
+  border-radius: 24px;
+}
+
+.cardConvert div div {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+
+span {
+  justify-self: center;
+}
+
+.ket {
+  height: 5rem;
+  border-radius: 16px !important;
+  padding: 0.5% 12px;
+}
+
+textarea {
+  height: inherit;
+  margin: 1.5rem 10px;
+  font-family: 'Poppins';
+  background-color: white;
+  border-color: grey;
+  border-radius: 10px;
+  width: -webkit-fill-available;
+  color: black;
+  padding: 10px 12px;
+}
+
+
+/* mobile css */
+@media screen and (max-width: 768px) {
+  :root {
+    text-align: center;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+    overflow: visible !important;
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  .box {
+    width: auto;
+  }
+
+  .tabs {
+    margin-bottom: 10px;
+  }
+
+  .cardConvert {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cardConvert div {
+    width: -webkit-fill-available;
+  }
+
+}
